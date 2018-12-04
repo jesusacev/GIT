@@ -2,4 +2,4 @@
 
 
 * [Como instalar un servidor GIT](guia/comoinstalarunservidorGIT.rst)
-* [Cliente GIT](guia/clienteGIT.rst)
+* [Mover data de un repositorio a otro desde el cliente](guia/moverdatarepositorioaotro.rst)

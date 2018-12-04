@@ -81,7 +81,7 @@ Server
 Cliente
 ++++++++
 
-- Luego nos vamos a una máquina cliente y clonamos el reposirorio de manera local conectandonos con el usuario de servicio::
+- Luego nos vamos a una máquina cliente y clonamos uno de los reposirorios de manera local, conectandonos con el usuario de servicio::
 
 	$ git clone usergit@192.168.0.188:/opt/repos/Cursos.git
 	Cloning into 'Cursos'...

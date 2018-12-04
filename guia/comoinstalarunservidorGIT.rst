@@ -5,7 +5,7 @@ Como instalar un servidor GIT
 
 	# yum install git
 
-- Luego creamos un directorio en /opt que será la estructura a donde guardaremos los repositorios:
+- Luego creamos un directorio en /opt que será la estructura a donde guardaremos los repositorios::
 
 	# mkdir /opt/repos
 

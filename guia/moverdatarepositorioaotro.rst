@@ -15,7 +15,7 @@ Mover data de un repositorio a otro desde el cliente
 	-rw-r--r-- 1 jacevedo jacevedo   108 dic  3 15:42 README.md
 	$ rm -rf .git
 
-- Inicializamos el repositorio de manera local y podemos ver que se vuelve a crear el .init::
+- Inicializamos el repositorio de manera local y podemos ver que se vuelve a crear el .git::
 
 	$ git init
 	Initialized empty Git repository in /home/jacevedo/Documentos/KB/Debian/.git/
@@ -30,7 +30,7 @@ Mover data de un repositorio a otro desde el cliente
 	-rw-r--r-- 1 jacevedo jacevedo 35149 nov 27 11:00 LICENSE
 	-rw-r--r-- 1 jacevedo jacevedo   108 dic  3 15:42 README.md
 
-- Luego creamos un nuevo repositorio en el server, y asociamos el repositorio local al creado en el servidor::
+- Luego creamos un nuevo repositorio en el server (que en este caso es git hub), y asociamos el repositorio local al creado en el servidor::
 
 	$ git remote add origin https://github.com/jesusacev/Debian.git
 
@@ -62,68 +62,7 @@ Mover data de un repositorio a otro desde el cliente
 	 create mode 100644 imagenes/Instalacion_Debian_9/016.png
 	 create mode 100644 imagenes/Instalacion_Debian_9/017.png
 	 create mode 100644 imagenes/Instalacion_Debian_9/018.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/019.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/020.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/021.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/022.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/023.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/024.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/025.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/026.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/027.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/028.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/029.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/030.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/031.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/032.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/033.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/034.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/035.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/036.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/037.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/038.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/039.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/040.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/041.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/042.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/043.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/044.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/045.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/046.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/047.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/048.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/049.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/050.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/051.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/052.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/053.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/054.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/055.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/056.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/057.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/058.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/059.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/060.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/061.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/062.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/063.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/064.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/065.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/066.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/067.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/068.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/070.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/071.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/072.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/073.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/074.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/075.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/076.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/077.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/078.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/079.png
-	 create mode 100644 imagenes/Instalacion_Debian_9/080.png
-
+	 
 	$ git push origin master
 	Username for 'https://github.com': jesusacev
 	Password for 'https://jesusacev@github.com': 

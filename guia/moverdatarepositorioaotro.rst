@@ -35,6 +35,7 @@ Mover data de un repositorio a otro desde el cliente
 	$ git remote add origin https://github.com/jesusacev/Debian.git
 
 - Por último subimos toda la data del reposiorio local al servidor::
+
 	$ git add *
 	$ git commit -m "debian"
 	[master (root-commit) ed76f69] debian

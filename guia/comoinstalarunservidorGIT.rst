@@ -97,7 +97,7 @@ Cliente
 	drwxrwxrwt 25 root     root     12288 dic  4 10:17 ..
 	drwxr-xr-x  7 jacevedo jacevedo  4096 dic  4 10:17 .git
 
-- Consultamos hacia donde esta apuntando nuestro repositorio local en el server::
+- Consultamos hacia donde esta apuntando nuestro repositorio local hacia el server::
 
 	$ git remote -v
 	origin	usergit@192.168.0.188:/opt/repos/Cursos.git (fetch)

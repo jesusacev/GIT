@@ -135,22 +135,6 @@ Cliente
 	To 192.168.0.188:/opt/repos/Cursos.git
 	 * [new branch]      master -> master
 
-- Finalmente este archivo ya puede ser visto por cualquier otro cliente que uitilice el server GIT.
+- Finalmente este archivo ya puede ser visto por cualquier otro cliente que utilice el server GIT.
 
-
-	
-
-
-
-
-
-
-
-	
-
-	
-
-
-
-	
 

@@ -1,6 +1,9 @@
 Como instalar un servidor GIT
 =====================================
 
+Server
++++++++++
+
 - Lo primero que debemos hacer es instalar el paquete git::
 
 	# yum install git
@@ -73,6 +76,72 @@ Como instalar un servidor GIT
 	drwxrwxr-x. 4 usergit usergit  31 dic  4 10:12 refs
 
 - ¡LISTO! ya los repositorios Training.git y Cursos.git estan listos para ser utilizados.
+
+
+Cliente
+++++++++
+
+- Luego nos vamos a una máquina cliente y clonamos el reposirorio de manera local conectandonos con el usuario de servicio::
+
+	$ git clone usergit@192.168.0.188:/opt/repos/Cursos.git
+	Cloning into 'Cursos'...
+	usergit@192.168.0.188's password: 
+	warning: You appear to have cloned an empty repository.
+
+- Ingresamos al repositorio y listamos su contenido::
+
+	$ cd Cursos/
+	jacevedo@scm04:/tmp/Cursos$ ls -la
+	total 20
+	drwxr-xr-x  3 jacevedo jacevedo  4096 dic  4 10:16 .
+	drwxrwxrwt 25 root     root     12288 dic  4 10:17 ..
+	drwxr-xr-x  7 jacevedo jacevedo  4096 dic  4 10:17 .git
+
+- Consultamos hacia donde esta apuntando nuestro repositorio local en el server::
+
+	$ git remote -v
+	origin	usergit@192.168.0.188:/opt/repos/Cursos.git (fetch)
+	origin	usergit@192.168.0.188:/opt/repos/Cursos.git (push)
+
+- Luego creamos un archivo dentro del repositorio local y lo subimos al server::
+
+	$ touch prueba
+	$ git add *
+	$ git commit -m "prueba"
+	master (root-commit) c0c89de] prueba
+	 Committer: jacevedo <jacevedo@scm04.consis.local>
+	Your name and email address were configured automatically based
+	on your username and hostname. Please check that they are accurate.
+	You can suppress this message by setting them explicitly. Run the
+	following command and follow the instructions in your editor to edit
+	your configuration file:
+
+	    git config --global --edit
+
+	After doing this, you may fix the identity used for this commit with:
+
+	    git commit --amend --reset-author
+
+	 1 file changed, 1 insertion(+)
+	 create mode 100644 prueba
+
+	$ git push
+	usergit@192.168.0.188's password: 
+	Permission denied, please try again.
+	usergit@192.168.0.188's password: 
+	Counting objects: 3, done.
+	Writing objects: 100% (3/3), 232 bytes | 0 bytes/s, done.
+	Total 3 (delta 0), reused 0 (delta 0)
+	To 192.168.0.188:/opt/repos/Cursos.git
+	 * [new branch]      master -> master
+
+- Finalmente este archivo ya puede ser visto por cualquier otro cliente que uitilice el server GIT.
+
+
+	
+
+
+
 
 
 

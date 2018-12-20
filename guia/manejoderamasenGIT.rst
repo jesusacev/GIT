@@ -77,7 +77,7 @@ Manejo de ramas en GIT
   	origin/master
 
 
-- Si hacemos un git log nos mostrará el historial de modificaciones subidas al servidor GIT, que en este caso es uno sólo::
+- Si hacemos un git log nos mostrará el historial de modificaciones subidas al servidor GIT, que en este caso es una sola::
 
 
 	$ git log
@@ -88,7 +88,7 @@ Manejo de ramas en GIT
 	    primer cambio
 
 
-- Luego hacemos la prueba creando otro archivo, para posteriormente volver a verificar el git log de la rama master::
+- Luego hacemos la prueba creando otro archivo, lo subimos al GIT y posteriormente volvemos a verificar el git log de la rama master::
 
 
 	$ touch a/archivo2.txt
@@ -163,7 +163,7 @@ Manejo de ramas en GIT
 	  master
 
 
-- Esta rama tendrá todas las modificaciones de la rama master::
+- Esta rama tendrá todas las modificaciones de la rama a donde la creamos, en este caso la rama master::
 
 
 	$ ls a/
@@ -218,7 +218,7 @@ Manejo de ramas en GIT
 	 * [new branch]      jesus -> jesus
 
 	
-- Cuando hacemos el git log, podemos ver las 2 modificaciones que nos trajimos de la rama master y la última realizada::
+- Cuando hacemos el git log, podemos ver las 2 modificaciones que nos trajimos de la rama master y la última realizada en la rama jesus::
 
 
 	$ git log
@@ -272,7 +272,11 @@ Manejo de ramas en GIT
 - Esto evidencia que los cambios entre ramas son totalmente independientes.
 
 
-- Sí queremos que los cambios de una rama sean llevados a la rama master debemos ejecutar el comando merge::
+- Sí queremos que los cambios de una rama sean llevados a otra rama, debemos ejecutar el comando merge, parados en la rama a donde queremos que se realiza la réplica::
+
+	$ git branch
+	  jesus
+        * master
 
 	$ git merge jesus
 	Updating e52c70a..2c4df67
@@ -310,6 +314,6 @@ Manejo de ramas en GIT
 	a  b
 
 
-- Cabe destacar que toda rama que se esta creando por primera vez, tendrá todo el contenido presente en al rama master.
+- Cabe destacar que toda rama que se esta creando por primera vez, tendrá todo el contenido presente en la rama a donde estamos parados cuando se crea.
 
 
